@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            color: white;
+        
+}
+        }
+        body {
+            font-family: sans-serif;
+            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+            color: white;
+        }
+        .form {
+            width: 600px;
+            margin: 20px auto;
+            background-color: violet;
+            border: solid 1px #2c3e50;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+        label {
+            padding:10px 0;
+        }
+        input[type=text], [type=email], [type=Age], [type=number], #dropdown {
+            border: solid 1px #2c3e50;
+            border-radius: 5px;
+            font-size: 18px;
+            margin:5px 10px;
+            padding:10px;
+            box-sizing: border-box;
+            width:580px;
+        }
+
+        #submit {
+            border: solid 1px #2c3e50;
+            border-radius: 5px;
+            font-size: 20px;
+            margin:5px 10px;
+            padding:10px;
+            box-sizing: border-box;
+            width:580px;
+            background-color: yellowgreen   ;
+        }
+        #submit:hover {
+            background-color: yellow;
+        }
+
+        label {
+            margin-left:10px;
+        }
+
+        [type=radio], [type=checkbox] {
+            margin-left: 10px;
+               
+            
+        }
+        #radio, #checkbox {
+           padding-left:10px;
+        }
+        textarea {
+            margin-left:10px; 
+        }
+        main {
+            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+            width: 100vw;
+            height: 200vh;
+        }
+        #description {
+            font-size: 22px;
+        }
+        #dropdown {
+            color:black !important;
+        } 
+        #option {
+            color:black !important;
+        }
+    </style>
+
+
+
+
+
+<main>
+  <center><h1 id="title">Speak-It Survey Form</h1></center>
+ <center><p id="description"> <em> Thank you for taking the time to help us improve the platform</em></p></center>
+<div class="form">
+  <form id="survey-form">  
+        <label for="Name" id="name-label">Name</label> <br> 
+        <input type="text" placeholder="Name" id="name" required> <br> 
+        <label for="Email" id="email-label">Email</label> <br>
+        <input type="email" placeholder="Enter your Email" id="email" required> <br> 
+        <label for="Age" id="number-label">Age (optional)</label><br>
+        <input type="number" placeholder="Age" id="number" min=18 max="100"> <br>
+        <label for="select" >How much time per day do you want to learn languages?</label> <br>
+    <select id="dropdown">
+        <option id="option" value="select your time">select minutes</option>
+        <option id="option" value="select your time">5 minutes</option>
+        <option id="option" value="select your time">10 minutes</option>
+        <option id="option" value="select your time">15 minutes</option>
+        <option id="option" value="select your time">20 minutes</option>
+        <option id="option" value="select your time">25 minutes</option>
+        <option id="option" value="select your time">30 minutes</option>
+        <option id="option" value="select your time">35 minutes</option>
+        <option id="option" value="select your time">40 minutes</option>
+        <option id="option" value="select your time">45 minutes</option>
+        <option id="option" value="select your time">50 minutes</option>
+        <option id="option" value="select your time">55 minutes</option>
+        <option id="option" value="select your time">60 minutes</option>
+    </select>
+    <p id="radio">Would you recommend Speak-It to a friend?</p>
+    <input type="radio"  name="meaning" value="definitely">
+    <label>Definitely</label><br>
+    <input type="radio"  name="meaning" value="female">
+    <label>Maybe</label><br>
+    <input type="radio" name="meaning" value="other">
+    <label>Not sure</label> <br>
+    <p id="checkbox">Which language do you learn with Speak-It?</p>
+    <input type="checkbox" value="French">
+    <label for="french">French</label> <br>
+    <input type="checkbox" value="Italian">
+    <label for="french">Italian</label> <br>
+    <input type="checkbox" value="Spanish">
+    <label for="french">Spanish</label> <br>
+    <input type="checkbox" value="German">
+    <label for="french">German</label> <br>
+    <input type="checkbox" value="Portuguese">
+    <label for="french">Portuguese</label> <br>
+    <input type="checkbox" value="Mandarin">
+    <label for="french">Mandarin</label> <br>
+    <input type="checkbox" value="Russian">
+    <label for="french">Russian</label> <br> <br>
+    <label for="text">Any comments or suggestions?</label> <br>
+ <br><textarea name="textarea" rows="8" cols="77" placeholder="Enter your comment here..."></textarea><br>
+    <button id="submit">submit</button>
+</div>
+</main>
+<script translate="text/javascript" src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html> 
